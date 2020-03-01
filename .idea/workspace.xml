@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="767da45c-8c97-44ee-83a1-a8ccb50b62da" name="Default Changelist" comment="" />
+    <list default="true" id="767da45c-8c97-44ee-83a1-a8ccb50b62da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/FillTablesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/FillTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ElectronicsDeviseStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ElectronicsDeviseStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ReadableProducesStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ReadableProducesStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ShoeSore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ShoeSore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YWmTWc6ZwB77GvC0h3Dl7FDg2z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,8 +38,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -63,7 +88,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583066732584</updated>
-      <workItem from="1583066734712" duration="2084000" />
+      <workItem from="1583066734712" duration="11902000" />
+      <workItem from="1583087979418" duration="4991000" />
     </task>
     <servers />
   </component>
@@ -75,6 +101,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583067592423" />
+    <state x="488" y="55" key="#com.intellij.ide.util.MemberChooser" timestamp="1583091876183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="55" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583091876183" />
     <state x="413" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583067460652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -95,13 +125,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="205" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583067889049" />
+    <state x="413" y="125" key="extract.method.dialog" timestamp="1583091671322">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="125" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1583091671322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JDBC/FillTablesMain.java</url>
-          <line>12</line>
+          <url>file://$PROJECT_DIR$/src/JDBC/FillTables.java</url>
+          <line>36</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

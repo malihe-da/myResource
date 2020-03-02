@@ -1,15 +1,17 @@
 package JDBC;
 
+import JDBC.dao.StoreDao;
 import JDBC.dto.Store;
 import JDBC.dto.User;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
 
-    static Map<Store, Integer> stock = new HashMap<>();
+    public static Map<Store, Integer> stock = new HashMap<>();
 
 
     public static void main(String[] args) {
@@ -24,22 +26,32 @@ public class Main {
 
         userDoShopping(user);
 
-       if(user.getShoppingBasket().size()>0){
-           user.printBasket();
-           while (true) {
-               System.out.println("Do you confirm your purchase (Y or N)?");
-               String ans = scn.next();
-               if (ans.equals("Y")) {
+        if (user.getShoppingBasket().size() > 0) {
+            user.printBasket();
+            while (true) {
+                System.out.println("Do you confirm your purchase (Y or N)?");
+                String ans = scn.next();
+                if (ans.equals("Y")) {
+                    for (Store purchase :
+                            user.getShoppingBasket().keySet()) {
 
-                   //TODO
-
-                   break;
-               } else if (ans.equals("N")) {
-                   userDoShopping(user);
-                   break;
-               }
-           }
-       }
+                        for (Store goods :
+                                stock.keySet()) {
+                            if (Objects.equals(purchase, goods)){
+                                new StoreDao().update(goods, user.getShoppingBasket().get(purchase));
+                            }
+                        }
+                    }
+                    user.cleanBasket();
+                    System.out.println("Hope you are happy with your purchase.");
+                    break;
+                } else if (ans.equals("N")) {
+                    userDoShopping(user);
+                    break;
+                }
+                System.out.println("Invalid input!");
+            }
+        }
 
 
     }
@@ -56,8 +68,7 @@ public class Main {
 
             if (choice.equals("0")) {
                 break;
-            }
-            else if (choice.equals("d")) {
+            } else if (choice.equals("d")) {
                 user.printBasket();
                 System.out.println("which one you want to delete?");
                 String deleteOne = scn.next();
@@ -128,7 +139,7 @@ public class Main {
         System.out.println("Please enter your family: ");
         user.setFamily(scn.next());
         System.out.println("Please enter your mobil number:");
-        user.setPhone(scn.nextInt());
+        user.setPhone(scn.next());
         System.out.println("Please enter your email address:");
         user.seteMail(scn.next());
         System.out.println("Please enter your address:");

@@ -2,6 +2,7 @@ package JDBC.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ElectronicsDeviseDao {
@@ -19,5 +20,33 @@ public class ElectronicsDeviseDao {
         }
 
         return null;
+    }
+    public void updateAndDelete(String name){
+        try {
+            Connection connection = getConnection();
+            PreparedStatement preparedStatement =
+                    getConnection().prepareStatement("DELETE from readable_producs where name =?");
+            preparedStatement.setString(1, name);
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void update(String name, int count) {
+        try {
+            Connection connection = getConnection();
+            PreparedStatement preparedStatement =
+                    getConnection().prepareStatement("update electronical_device set count=? where name =?");
+            preparedStatement.setInt(1, count);
+            preparedStatement.setString(2, name);
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

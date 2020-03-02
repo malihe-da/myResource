@@ -10,7 +10,7 @@ public class User {
     private String password;
     private String name;
     private String family;
-    private long phone;
+    private String phone;
     private String eMail;
     private String address;
     Map<Store, Integer> shoppingBasket = new HashMap<>();
@@ -59,7 +59,7 @@ public class User {
             return;
         }
         System.out.println(getUserName() + " shopping basket:");
-        System.out.println("\n perches ----------  count");
+        System.out.println("\n purchase ----------  count");
         System.out.println("______________________________________");
 
         for (Store kala :
@@ -114,11 +114,11 @@ public class User {
         this.family = family;
     }
 
-    public long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

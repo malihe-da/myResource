@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767da45c-8c97-44ee-83a1-a8ccb50b62da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JDBC/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/dgStore.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/dao/StoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dgStore_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/dgStore_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/FillTablesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/FillTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dgStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dgStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/FillTablesMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ElectronicsDeviseStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ElectronicsDeviseStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ReadableProducesStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ReadableProducesStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ShoeSore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ShoeSore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/FillTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/FillTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ElectronicsDeviseStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ElectronicsDeviseStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ReadableProducesStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ReadableProducesStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/ShoeSore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/ShoeSore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ReadableProduceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ReadableProduceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ShoeStoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ShoeStoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/StorDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +51,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="FillTables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.FillTables" />
+      <module name="dgStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FillTablesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBC.FillTablesMain" />
       <module name="dgStore" />
@@ -60,8 +83,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Main" />
+      <module name="dgStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FillTables" />
         <item itemvalue="Application.FillTablesMain" />
       </list>
     </recent_temporary>
@@ -90,6 +128,9 @@
       <updated>1583066732584</updated>
       <workItem from="1583066734712" duration="11902000" />
       <workItem from="1583087979418" duration="4991000" />
+      <workItem from="1583153906174" duration="1700000" />
+      <workItem from="1583155916713" duration="588000" />
+      <workItem from="1583156646522" duration="7528000" />
     </task>
     <servers />
   </component>
@@ -97,10 +138,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="24" key="#Project_Structure" timestamp="1583067592423">
+    <state x="275" y="24" key="#Project_Structure" timestamp="1583158738021">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583067592423" />
+    <state x="275" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583158738021" />
     <state x="488" y="55" key="#com.intellij.ide.util.MemberChooser" timestamp="1583091876183">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -109,22 +150,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1583067460652" />
-    <state width="1322" height="205" key="GridCell.Tab.0.bottom" timestamp="1583067889049">
+    <state x="437" y="81" key="DetectedRootsChooserDialog" timestamp="1583158733892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="205" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583067889049" />
-    <state width="1322" height="205" key="GridCell.Tab.0.center" timestamp="1583067889049">
+    <state x="437" y="81" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1583158733892" />
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1583158731802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="205" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583067889049" />
-    <state width="1322" height="205" key="GridCell.Tab.0.left" timestamp="1583067889049">
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583158731802" />
+    <state width="1322" height="439" key="GridCell.Tab.0.bottom" timestamp="1583159813965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="205" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583067889049" />
-    <state width="1322" height="205" key="GridCell.Tab.0.right" timestamp="1583067889049">
+    <state width="1322" height="439" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
+    <state width="1322" height="439" key="GridCell.Tab.0.center" timestamp="1583159813965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="205" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583067889049" />
+    <state width="1322" height="439" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
+    <state width="1322" height="439" key="GridCell.Tab.0.left" timestamp="1583159813965">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="439" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
+    <state width="1322" height="439" key="GridCell.Tab.0.right" timestamp="1583159813965">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="439" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
     <state x="413" y="125" key="extract.method.dialog" timestamp="1583091671322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -135,7 +184,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/JDBC/FillTables.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

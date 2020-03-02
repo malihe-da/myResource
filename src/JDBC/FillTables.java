@@ -9,9 +9,10 @@ import java.sql.*;
 import static JDBC.Main.stock;
 
 public class FillTables {
+
     public void fillTables(){
 
-        insertIntoStore(1, "Maktab Store");
+       /* insertIntoStore(1, "Maktab Store");
 
         insertIntoShoeStore(1, "AlStar", 800000, 5, "sport");
         insertIntoShoeStore(2, "Puma", 600000, 3, "sport");
@@ -29,12 +30,12 @@ public class FillTables {
         insertIntoReadableStore(2, "National geographic", 90000, 3, "Journal");
         insertIntoReadableStore(3, "AMS", 100000, 5, "Annals");
         insertIntoReadableStore(4, "Iranian Mathematical Society", 200000, 8, "Annals");
-
+*/
 
     }
     public void insertIntoStore(int id, String name){
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 
@@ -57,7 +58,7 @@ public class FillTables {
     public void insertIntoShoeStore(int id, String name, double price, int count, String type){
         stock.put(new ShoeSore(name, type, price), count);
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 
@@ -83,7 +84,7 @@ public class FillTables {
     public void insertIntoElectronicsStore(int id, String name, double price, int count, String type){
         stock.put(new ElectronicsDeviseStore(name, type, price), count);
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 
@@ -106,10 +107,10 @@ public class FillTables {
             e.printStackTrace();
         }
     }
-    public static void insertIntoReadableStore(int id, String name, double price, int count, String type){
+    public void insertIntoReadableStore(int id, String name, double price, int count, String type){
         stock.put(new ReadableProducesStore(name, type, price), count);
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 

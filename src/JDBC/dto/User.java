@@ -1,9 +1,6 @@
 package JDBC.dto;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class User {
     private String userName;
@@ -13,7 +10,7 @@ public class User {
     private String phone;
     private String eMail;
     private String address;
-    Map<Store, Integer> shoppingBasket = new HashMap<>();
+    Map<Store, Integer> shoppingBasket = new HashMap<>(5);
 
     public User(String userName, String password) {
         this.userName = userName;
@@ -26,8 +23,8 @@ public class User {
             if (kala.equals(goods)) {
                 int size = shoppingBasket.get(kala);
                 shoppingBasket.put(goods, size + count);
+                return;
             }
-            return;
         }
         if (shoppingBasket.size() == 5) {
             System.out.println("Your Basket is Full. If you want this goods, you may delete your previous purchase.");
@@ -73,9 +70,9 @@ public class User {
         int total=0;
         for (Store kala :
                 shoppingBasket.keySet()) {
-            total += (kala.getPrice())* shoppingBasket.get(total);
+            total += (kala.getPrice())* shoppingBasket.get(kala);
         }
-        System.out.println("Your total price is = " + total);
+        System.out.println("Your Total Price is = " + total);
     }
 
     public void cleanBasket(){
@@ -142,4 +139,23 @@ public class User {
         return shoppingBasket;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(userName, user.userName) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(name, user.name) &&
+                Objects.equals(family, user.family) &&
+                Objects.equals(phone, user.phone) &&
+                Objects.equals(eMail, user.eMail) &&
+                Objects.equals(address, user.address) &&
+                Objects.equals(shoppingBasket, user.shoppingBasket);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userName, password, name, family, phone, eMail, address, shoppingBasket);
+    }
 }

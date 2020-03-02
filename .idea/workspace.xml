@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767da45c-8c97-44ee-83a1-a8ccb50b62da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/dgStore.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JDBC/dao/StoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dgStore_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/dgStore_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dgStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dgStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/FillTablesMain.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ElectronicsDeviseStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ElectronicsDeviseStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ReadableProducesStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ReadableProducesStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ShoeSore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/ShoeSore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ReadableProduceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ReadableProduceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ShoeStoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ShoeStoreDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/StorDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/FillTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/FillTables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ElectronicsDeviseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ReadableProduceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ReadableProduceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/ShoeStoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dao/ShoeStoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dao/StorDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +121,7 @@
       <workItem from="1583087979418" duration="4991000" />
       <workItem from="1583153906174" duration="1700000" />
       <workItem from="1583155916713" duration="588000" />
-      <workItem from="1583156646522" duration="7528000" />
+      <workItem from="1583156646522" duration="12630000" />
     </task>
     <servers />
   </component>
@@ -158,22 +149,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583158731802" />
-    <state width="1322" height="439" key="GridCell.Tab.0.bottom" timestamp="1583159813965">
+    <state width="1322" height="217" key="GridCell.Tab.0.bottom" timestamp="1583177705200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="439" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
-    <state width="1322" height="439" key="GridCell.Tab.0.center" timestamp="1583159813965">
+    <state width="1322" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583177705200" />
+    <state width="1322" height="217" key="GridCell.Tab.0.center" timestamp="1583177705200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="439" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
-    <state width="1322" height="439" key="GridCell.Tab.0.left" timestamp="1583159813965">
+    <state width="1322" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583177705200" />
+    <state width="1322" height="217" key="GridCell.Tab.0.left" timestamp="1583177705200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="439" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
-    <state width="1322" height="439" key="GridCell.Tab.0.right" timestamp="1583159813965">
+    <state width="1322" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583177705200" />
+    <state width="1322" height="217" key="GridCell.Tab.0.right" timestamp="1583177705200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="439" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583159813965" />
+    <state width="1322" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583177705200" />
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1583177705201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583177705201" />
+    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1583177705201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583177705201" />
+    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1583177705200">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583177705200" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1583177705201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583177705201" />
     <state x="413" y="125" key="extract.method.dialog" timestamp="1583091671322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -183,9 +190,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JDBC/FillTables.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/JDBC/Main.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

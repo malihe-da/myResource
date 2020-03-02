@@ -20,7 +20,7 @@ public class Main {
         tables.fillTables();
 
         User user = register();
-        userForm(user);
+        //userForm(user);
 
         printMenu();
 
@@ -32,6 +32,8 @@ public class Main {
                 System.out.println("Do you confirm your purchase (Y or N)?");
                 String ans = scn.next();
                 if (ans.equals("Y")) {
+                    user.totalPrice();
+
                     for (Store purchase :
                             user.getShoppingBasket().keySet()) {
 
@@ -63,12 +65,14 @@ public class Main {
 
             System.out.println("What do you choose for shopping?" +
                     "\n If your shopping is finished, please enter 0 " +
-                    "\n If you want to delete your  previous purchase, please enter \'d\'");
+                    "\n If you want to delete your  previous purchase, please enter \'d\'" +
+                    "\n Otherwise, Please enter the name of goods that you want:");
             String choice = scn.next();
 
             if (choice.equals("0")) {
                 break;
-            } else if (choice.equals("d")) {
+            }
+            else if (choice.equals("d")) {
                 user.printBasket();
                 System.out.println("which one you want to delete?");
                 String deleteOne = scn.next();
@@ -76,7 +80,7 @@ public class Main {
                         stock.keySet()) {
                     if (goods.getName().equals(deleteOne)) {
                         user.deleteFromBasket(goods);
-                        continue;
+                        break;
                     }
                 }
             }

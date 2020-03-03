@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767da45c-8c97-44ee-83a1-a8ccb50b62da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ElectronicsDeviseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ReadableProduceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ReadableProduceDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ShoeStoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/ShoeStoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dao/StorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dgStore/JDBC/dto/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JDBC/FillTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/FillTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/dto/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +112,7 @@
       <workItem from="1583153906174" duration="1700000" />
       <workItem from="1583155916713" duration="588000" />
       <workItem from="1583156646522" duration="12630000" />
+      <workItem from="1583246171183" duration="664000" />
     </task>
     <servers />
   </component>

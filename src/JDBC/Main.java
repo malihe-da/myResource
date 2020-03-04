@@ -4,6 +4,10 @@ import JDBC.dao.StoreDao;
 import JDBC.dto.Store;
 import JDBC.dto.User;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -20,7 +24,7 @@ public class Main {
         tables.fillTables();
 
         User user = register();
-        //userForm(user);
+        userForm(user);
 
         printMenu();
 
@@ -148,5 +152,30 @@ public class Main {
         user.seteMail(scn.next());
         System.out.println("Please enter your address:");
         user.setAddress(scn.next());
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
+                    "root", null);
+
+            String query="insert into customer values(1, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement statement=connection.prepareStatement(query);
+            statement.setString(1, user.getUserName());
+            statement.setString(2, user.getName());
+            statement.setString(3, user.getFamily());
+            statement.setString(4, user.getPhone());
+            statement.setString(5, user.geteMail());
+            statement.setString(6, user.getAddress());
+
+            statement.executeUpdate();
+
+            statement.close();
+            connection.close();
+        }
+        catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }

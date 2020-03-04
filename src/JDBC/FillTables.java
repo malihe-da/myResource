@@ -33,6 +33,7 @@ public class FillTables {
 
 
     }
+
     public void insertIntoStore(int id, String name){
         try {
             Class.forName("com.mysql.jdbc.Driver");

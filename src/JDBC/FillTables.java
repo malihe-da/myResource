@@ -29,7 +29,7 @@ public class FillTables {
         insertIntoReadableStore(5, "Nature", 80000, 9, "Journal");
         insertIntoReadableStore(6, "National geographic", 90000, 3, "Journal");
         insertIntoReadableStore(7, "AMS", 100000, 5, "Annals");
-        insertIntoReadableStore(8, "Iranian Mathematical Society", 200000, 8, "Annals");
+        insertIntoReadableStore(8, "Iranian MS", 200000, 8, "Annals");
 
 
     }

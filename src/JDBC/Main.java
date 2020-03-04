@@ -70,11 +70,15 @@ public class Main {
             System.out.println("What do you choose for shopping?" +
                     "\n If your shopping is finished, please enter 0 " +
                     "\n If you want to delete your  previous purchase, please enter \'d\'" +
+                    "\n If you want to see market stock, please enter \'m\'" +
                     "\n Otherwise, Please enter the name of goods that you want:");
             String choice = scn.next();
 
             if (choice.equals("0")) {
                 break;
+            }
+            if (choice.equals("m")) {
+                printMenu();
             }
             else if (choice.equals("d")) {
                 user.printBasket();

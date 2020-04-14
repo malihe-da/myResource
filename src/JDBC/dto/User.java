@@ -56,16 +56,33 @@ public class User {
             System.out.println("Your basket is empty!");
             return;
         }
+
+
         System.out.println(getUserName() + " shopping basket:");
-        System.out.println("\n purchase ----------  count");
-        System.out.println("______________________________________");
+        System.out.println("\n purchase ---------- unitPrice ---------- count");
+        System.out.println("_______________________________________________________");
+
+        List<Store> basket = new ArrayList<>();
+        for (Store kala:
+             shoppingBasket.keySet()) {
+            basket.add(kala);
+        }
+
+        sortBasket(basket);
 
         for (Store kala :
-                shoppingBasket.keySet()) {
-            System.out.println(kala.getName() + " ----------  " + shoppingBasket.get(kala));
+                basket) {
+            System.out.println(kala.getName() + " ----------  "  + kala.getPrice() + " ----------  " + shoppingBasket.get(kala));
         }
 
     }
+
+    private void sortBasket(List<Store> basket) {
+        Comparator<Store> basketLambdaComparator = (o1, o2) -> o1.getPrice()==o2.getPrice() ? 0 : o1.getPrice()> o2.getPrice() ?1 : -1;
+
+        basket.sort(basketLambdaComparator);
+    }
+
 
     public void totalPrice(){
         int total=0;

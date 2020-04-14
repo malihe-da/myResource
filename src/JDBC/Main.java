@@ -18,8 +18,8 @@ public class Main {
     public static void main(String[] args) {
         List<User> userList = new ArrayList<>();
         Scanner scn = new Scanner(System.in);
-       /* FillTables tables = new FillTables();
-        tables.fillTables();*/
+        FillTables tables = new FillTables();
+        tables.fillTables();
 
         User user = register();
         userForm(user);
@@ -171,12 +171,11 @@ public class Main {
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 
-            String query="insert into customer values(1, ?, ?, ?, ?, ?, ?, ?)";
+            String query="insert into customer values(1, ?, ?, ?, ?, ?, ?)";
             PreparedStatement statement=connection.prepareStatement(query);
             statement.setString(1, user.getUserName());
             statement.setString(2, user.getName());
             statement.setString(3, user.getFamily());
-            statement.setInt(4, user.getAge());
             statement.setString(5, user.getPhone());
             statement.setString(6, user.geteMail());
             statement.setString(7, user.getAddress());

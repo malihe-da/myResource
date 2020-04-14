@@ -8,10 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -19,12 +16,14 @@ public class Main {
 
 
     public static void main(String[] args) {
+        List<User> userList = new ArrayList<>();
         Scanner scn = new Scanner(System.in);
-        FillTables tables = new FillTables();
-        tables.fillTables();
+       /* FillTables tables = new FillTables();
+        tables.fillTables();*/
 
         User user = register();
         userForm(user);
+        userList.add(user);
 
         printMenu();
 
@@ -59,7 +58,15 @@ public class Main {
             }
         }
 
+        sortUsers(userList);
 
+
+    }
+
+    private static void sortUsers(List<User> userList) {
+        Comparator<User> myLambdaComparator = (o1, o2) -> o1.getAge()==o2.getAge() ? 0 : o1.getAge() > o2.getAge() ? 1 : -1;
+
+        userList.sort(myLambdaComparator);
     }
 
     private static void userDoShopping(User user) {
@@ -150,6 +157,8 @@ public class Main {
         user.setName(scn.nextLine());
         System.out.println("Please enter your family: ");
         user.setFamily(scn.next());
+        System.out.println("Please enter your age: ");
+        user.setAge(scn.nextInt());
         System.out.println("Please enter your mobil number:");
         user.setPhone(scn.next());
         System.out.println("Please enter your email address:");
@@ -162,14 +171,15 @@ public class Main {
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/dg_maktab_store",
                     "root", null);
 
-            String query="insert into customer values(1, ?, ?, ?, ?, ?, ?)";
+            String query="insert into customer values(1, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement statement=connection.prepareStatement(query);
             statement.setString(1, user.getUserName());
             statement.setString(2, user.getName());
             statement.setString(3, user.getFamily());
-            statement.setString(4, user.getPhone());
-            statement.setString(5, user.geteMail());
-            statement.setString(6, user.getAddress());
+            statement.setInt(4, user.getAge());
+            statement.setString(5, user.getPhone());
+            statement.setString(6, user.geteMail());
+            statement.setString(7, user.getAddress());
 
             statement.executeUpdate();
 

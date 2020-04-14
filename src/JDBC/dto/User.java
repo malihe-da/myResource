@@ -7,6 +7,7 @@ public class User {
     private String password;
     private String name;
     private String family;
+    private int age;
     private String phone;
     private String eMail;
     private String address;
@@ -111,6 +112,14 @@ public class User {
         this.family = family;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public String getPhone() {
         return phone;
     }
@@ -157,5 +166,12 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(userName, password, name, family, phone, eMail, address, shoppingBasket);
+    }
+
+    @Override
+    public String toString() {
+        return "User= " +
+                 name +  family +
+                ", age=" + age ;
     }
 }
